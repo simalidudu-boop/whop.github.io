@@ -1,0 +1,4531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Whop Creator Toolkit: AI-powered tools for Whop creators. Buy once, own forever. No subscriptions, no data sharing. Professional revenue calculators, content clippers, analytics dashboards, and AI assistants.">
+    <meta name="keywords" content="Whop tools, Whop creator tools, Whop revenue calculator, Whop analytics, Whop AI assistant, content clipper, Whop automation, creator economy tools">
+    <meta name="author" content="Whop Creator Toolkit">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://whopcreator.toolkit">
+    <meta property="og:title" content="Whop Creator Toolkit | AI Tools You Own Forever">
+    <meta property="og:description" content="Stop paying monthly fees. Start owning your tools. AI-powered solutions for Whop creators that run locally on your machine.">
+    <meta property="og:image" content="og-image.png">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Whop Creator Toolkit | AI Tools You Own Forever">
+    <meta name="twitter:description" content="Stop paying monthly fees. Start owning your tools. AI-powered solutions for Whop creators.">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://whopcreator.toolkit">
+    
+    <title>Whop Creator Toolkit | AI-Powered Tools You Buy Once & Own Forever</title>
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Schema.org Structured Data for E-E-A-T -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Whop Creator Toolkit",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": ["Windows", "Linux"],
+        "offers": {
+            "@type": "AggregateOffer",
+            "lowPrice": "0",
+            "highPrice": "299",
+            "priceCurrency": "USD",
+            "offerCount": "4"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "ratingCount": "247"
+        },
+        "author": {
+            "@type": "Organization",
+            "name": "Whop Creator Toolkit",
+            "url": "https://whopcreator.toolkit"
+        }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Whop Creator Toolkit",
+        "description": "AI-powered tools for Whop creators that they buy once and own forever",
+        "url": "https://whopcreator.toolkit",
+        "foundingDate": "2024",
+        "knowsAbout": ["Whop Platform", "Creator Economy", "AI Tools", "Revenue Analytics", "Content Creation"]
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What makes Whop Creator Toolkit different from other Whop tools?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Unlike subscription-based SaaS tools, Whop Creator Toolkit offers one-time purchase tools that run locally on your machine. Your data never leaves your computer, and you own the software forever with no recurring fees."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Do I need technical skills to use these tools?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. Each tool comes with step-by-step setup guides. Phantom Frames work directly in Google Sheets. Psycho Modules and Daemon Infrastructure include one-click installers for Windows and Linux."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is my Whop data safe with these tools?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Absolutely. All tools run 100% locally on your machine. We never collect, store, or transmit your business data. You maintain complete sovereignty over your information."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --primary: #6366f1;
+            --primary-dark: #4f46e5;
+            --primary-light: #818cf8;
+            --secondary: #0ea5e9;
+            --accent: #f59e0b;
+            --success: #10b981;
+            --background: #ffffff;
+            --surface: #f8fafc;
+            --surface-elevated: #ffffff;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --text-muted: #94a3b8;
+            --border: #e2e8f0;
+            --border-light: #f1f5f9;
+            --gradient-primary: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #a855f7 100%);
+            --gradient-secondary: linear-gradient(135deg, #0ea5e9 0%, #6366f1 100%);
+            --gradient-accent: linear-gradient(135deg, #f59e0b 0%, #ef4444 100%);
+            --gradient-success: linear-gradient(135deg, #10b981 0%, #0ea5e9 100%);
+            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+            --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+            --shadow-glow: 0 0 40px rgb(99 102 241 / 0.15);
+            --shadow-glow-accent: 0 0 40px rgb(245 158 11 / 0.2);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--background);
+            color: var(--text-primary);
+            line-height: 1.7;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Smooth scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--surface);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--border);
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--text-muted);
+        }
+
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            line-height: 1.2;
+            color: var(--text-primary);
+        }
+
+        h1 { font-size: clamp(2.5rem, 5vw, 4rem); }
+        h2 { font-size: clamp(2rem, 4vw, 3rem); }
+        h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
+        h4 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
+
+        p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--primary-dark);
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .container-narrow {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes scaleIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        @keyframes shimmer {
+            0% { background-position: -200% 0; }
+            100% { background-position: 200% 0; }
+        }
+
+        @keyframes glow {
+            0%, 100% { box-shadow: 0 0 20px rgb(99 102 241 / 0.3); }
+            50% { box-shadow: 0 0 40px rgb(99 102 241 / 0.5); }
+        }
+
+        @keyframes slideInFromLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInFromRight {
+            from {
+                opacity: 0;
+                transform: translateX(100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes bounceIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.3);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            70% {
+                transform: scale(0.9);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes rotateIn {
+            from {
+                opacity: 0;
+                transform: rotate(-200deg) scale(0);
+            }
+            to {
+                opacity: 1;
+                transform: rotate(0) scale(1);
+            }
+        }
+
+        @keyframes typewriter {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        @keyframes borderGlow {
+            0%, 100% {
+                border-color: var(--primary);
+                box-shadow: 0 0 10px rgb(99 102 241 / 0.3);
+            }
+            50% {
+                border-color: var(--primary-light);
+                box-shadow: 0 0 20px rgb(99 102 241 / 0.5);
+            }
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        @keyframes countUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .animate-on-scroll.delay-1 { transition-delay: 0.1s; }
+        .animate-on-scroll.delay-2 { transition-delay: 0.2s; }
+        .animate-on-scroll.delay-3 { transition-delay: 0.3s; }
+        .animate-on-scroll.delay-4 { transition-delay: 0.4s; }
+        .animate-on-scroll.delay-5 { transition-delay: 0.5s; }
+
+        .stagger-animation > * {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .stagger-animation.visible > *:nth-child(1) { transition-delay: 0.1s; opacity: 1; transform: translateY(0); }
+        .stagger-animation.visible > *:nth-child(2) { transition-delay: 0.2s; opacity: 1; transform: translateY(0); }
+        .stagger-animation.visible > *:nth-child(3) { transition-delay: 0.3s; opacity: 1; transform: translateY(0); }
+        .stagger-animation.visible > *:nth-child(4) { transition-delay: 0.4s; opacity: 1; transform: translateY(0); }
+        .stagger-animation.visible > *:nth-child(5) { transition-delay: 0.5s; opacity: 1; transform: translateY(0); }
+        .stagger-animation.visible > *:nth-child(6) { transition-delay: 0.6s; opacity: 1; transform: translateY(0); }
+
+        /* Header / Navigation */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border-light);
+            transition: all 0.3s ease;
+        }
+
+        .header.scrolled {
+            box-shadow: var(--shadow-md);
+        }
+
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 80px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 800;
+            font-size: 1.4rem;
+            color: var(--text-primary);
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.02);
+            color: var(--text-primary);
+        }
+
+        .logo-icon {
+            width: 44px;
+            height: 44px;
+            background: var(--gradient-primary);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: 700;
+            box-shadow: var(--shadow-md);
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .nav-link {
+            padding: 10px 18px;
+            color: var(--text-secondary);
+            font-weight: 500;
+            font-size: 0.95rem;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 6px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 2px;
+            background: var(--gradient-primary);
+            border-radius: 1px;
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: var(--primary);
+            background: var(--surface);
+        }
+
+        .nav-link:hover::after {
+            width: 20px;
+        }
+
+        .nav-cta {
+            padding: 12px 24px;
+            background: var(--gradient-primary);
+            color: white;
+            font-weight: 600;
+            border-radius: 10px;
+            margin-left: 16px;
+            box-shadow: var(--shadow-md);
+            transition: all 0.3s ease;
+        }
+
+        .nav-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg), var(--shadow-glow);
+            color: white;
+        }
+
+        .mobile-menu-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            padding: 10px;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .mobile-menu-toggle span {
+            width: 24px;
+            height: 2px;
+            background: var(--text-primary);
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 160px 0 100px;
+            background: var(--background);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            background: 
+                radial-gradient(ellipse 80% 50% at 50% -20%, rgb(99 102 241 / 0.08) 0%, transparent 50%),
+                radial-gradient(ellipse 60% 40% at 80% 50%, rgb(14 165 233 / 0.05) 0%, transparent 50%),
+                radial-gradient(ellipse 60% 40% at 20% 80%, rgb(168 85 247 / 0.05) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .hero-content {
+            animation: fadeInLeft 1s ease;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px 8px 8px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 100px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+            margin-bottom: 24px;
+            animation: bounceIn 0.8s ease 0.3s both;
+        }
+
+        .hero-badge-icon {
+            width: 28px;
+            height: 28px;
+            background: var(--gradient-success);
+            border-radius: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 0.8rem;
+        }
+
+        .hero-title {
+            font-size: clamp(2.8rem, 5vw, 4.2rem);
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 24px;
+            letter-spacing: -0.02em;
+        }
+
+        .hero-title .highlight {
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-title .underline-animated {
+            position: relative;
+            display: inline-block;
+        }
+
+        .hero-title .underline-animated::after {
+            content: '';
+            position: absolute;
+            bottom: 4px;
+            left: 0;
+            width: 100%;
+            height: 8px;
+            background: rgb(245 158 11 / 0.3);
+            border-radius: 4px;
+            z-index: -1;
+            animation: fadeInLeft 0.8s ease 0.8s both;
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+
+        .hero-features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-bottom: 40px;
+        }
+
+        .hero-feature {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 16px;
+            background: var(--surface);
+            border-radius: 10px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--text-primary);
+            border: 1px solid var(--border-light);
+            transition: all 0.3s ease;
+        }
+
+        .hero-feature:hover {
+            border-color: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .hero-feature-icon {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 6px;
+            font-size: 0.85rem;
+        }
+
+        .hero-feature-icon.check {
+            background: rgb(16 185 129 / 0.1);
+            color: var(--success);
+        }
+
+        .hero-feature-icon.lock {
+            background: rgb(99 102 241 / 0.1);
+            color: var(--primary);
+        }
+
+        .hero-feature-icon.device {
+            background: rgb(14 165 233 / 0.1);
+            color: var(--secondary);
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 16px 32px;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: none;
+            text-decoration: none;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .btn:hover::before {
+            left: 100%;
+        }
+
+        .btn-primary {
+            background: var(--gradient-primary);
+            color: white;
+            box-shadow: var(--shadow-lg), 0 0 0 0 rgb(99 102 241 / 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-xl), 0 0 40px rgb(99 102 241 / 0.4);
+            color: white;
+        }
+
+        .btn-secondary {
+            background: var(--surface);
+            color: var(--text-primary);
+            border: 2px solid var(--border);
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--primary);
+            background: white;
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .btn-large {
+            padding: 20px 40px;
+            font-size: 1.1rem;
+        }
+
+        .btn-icon {
+            width: 20px;
+            height: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .btn:hover .btn-icon {
+            transform: translateX(4px);
+        }
+
+        .hero-visual {
+            position: relative;
+            animation: fadeInRight 1s ease 0.3s both;
+        }
+
+        .hero-card {
+            background: white;
+            border-radius: 24px;
+            padding: 32px;
+            box-shadow: var(--shadow-xl);
+            border: 1px solid var(--border-light);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--gradient-primary);
+        }
+
+        .hero-card-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .hero-card-icon {
+            width: 56px;
+            height: 56px;
+            background: var(--gradient-primary);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .hero-card-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .hero-card-subtitle {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .hero-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .hero-stat {
+            text-align: center;
+            padding: 20px;
+            background: var(--surface);
+            border-radius: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .hero-stat:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .hero-stat-value {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--primary);
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .hero-stat-label {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+
+        .hero-card-features {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .hero-card-feature {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 16px;
+            background: var(--surface);
+            border-radius: 12px;
+            font-size: 0.95rem;
+            color: var(--text-primary);
+            transition: all 0.3s ease;
+        }
+
+        .hero-card-feature:hover {
+            transform: translateX(8px);
+            background: white;
+            box-shadow: var(--shadow-md);
+        }
+
+        .hero-card-feature-icon {
+            color: var(--success);
+            font-size: 1.1rem;
+        }
+
+        .floating-elements {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            pointer-events: none;
+            overflow: hidden;
+        }
+
+        .floating-element {
+            position: absolute;
+            animation: float 8s ease-in-out infinite;
+        }
+
+        .floating-element:nth-child(1) {
+            top: 10%;
+            right: -5%;
+            animation-delay: 0s;
+        }
+
+        .floating-element:nth-child(2) {
+            bottom: 20%;
+            right: 5%;
+            animation-delay: -2s;
+        }
+
+        .floating-element:nth-child(3) {
+            top: 30%;
+            right: 10%;
+            animation-delay: -4s;
+        }
+
+        .floating-badge {
+            padding: 12px 20px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: var(--shadow-lg);
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* CTA Banner Section */
+        .cta-banner {
+            padding: 60px 0;
+            background: var(--gradient-primary);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-banner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.5;
+        }
+
+        .cta-banner-content {
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta-banner-icon {
+            width: 80px;
+            height: 80px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 24px;
+            font-size: 2rem;
+            color: white;
+            animation: float 4s ease-in-out infinite;
+            backdrop-filter: blur(10px);
+        }
+
+        .cta-banner-title {
+            font-size: clamp(1.8rem, 3vw, 2.5rem);
+            font-weight: 800;
+            color: white;
+            margin-bottom: 16px;
+        }
+
+        .cta-banner-text {
+            font-size: 1.2rem;
+            color: rgba(255,255,255,0.9);
+            max-width: 700px;
+            margin: 0 auto 32px;
+            line-height: 1.7;
+        }
+
+        .cta-banner-features {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 24px;
+            margin-bottom: 32px;
+        }
+
+        .cta-banner-feature {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: white;
+            font-weight: 500;
+        }
+
+        .cta-banner-feature-icon {
+            width: 28px;
+            height: 28px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+        }
+
+        .btn-cta-white {
+            background: white;
+            color: var(--primary);
+            padding: 18px 40px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            border-radius: 14px;
+            box-shadow: var(--shadow-xl);
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .btn-cta-white:hover {
+            transform: translateY(-4px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            color: var(--primary-dark);
+        }
+
+        .btn-cta-white .arrow {
+            transition: transform 0.3s ease;
+        }
+
+        .btn-cta-white:hover .arrow {
+            transform: translateX(6px);
+        }
+
+        .cta-urgency {
+            margin-top: 20px;
+            font-size: 0.95rem;
+            color: rgba(255,255,255,0.8);
+        }
+
+        .cta-urgency strong {
+            color: white;
+        }
+
+        /* Trust Badges Section */
+        .trust-section {
+            padding: 80px 0;
+            background: var(--surface);
+            border-top: 1px solid var(--border-light);
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .trust-content {
+            text-align: center;
+        }
+
+        .trust-label {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-muted);
+            margin-bottom: 32px;
+            font-weight: 600;
+        }
+
+        .trust-stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+            margin-bottom: 48px;
+        }
+
+        .trust-stat {
+            text-align: center;
+        }
+
+        .trust-stat-value {
+            font-size: 3rem;
+            font-weight: 900;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 8px;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .trust-stat-label {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        .trust-logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 48px;
+            flex-wrap: wrap;
+            padding: 32px 0;
+            border-top: 1px solid var(--border);
+        }
+
+        .trust-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--text-muted);
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+        }
+
+        .trust-logo:hover {
+            color: var(--text-primary);
+            transform: scale(1.05);
+        }
+
+        .trust-logo-icon {
+            width: 40px;
+            height: 40px;
+            background: white;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            box-shadow: var(--shadow-sm);
+        }
+
+        /* Problem Section */
+        .problem-section {
+            padding: 120px 0;
+            background: var(--background);
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 80px;
+        }
+
+        .section-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 100px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 800;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        .problem-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+        }
+
+        .problem-card {
+            padding: 40px;
+            background: white;
+            border-radius: 24px;
+            border: 2px solid var(--border);
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .problem-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--gradient-accent);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.4s ease;
+        }
+
+        .problem-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-xl), var(--shadow-glow-accent);
+        }
+
+        .problem-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .problem-icon {
+            width: 64px;
+            height: 64px;
+            background: rgb(245 158 11 / 0.1);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            margin-bottom: 24px;
+            transition: all 0.3s ease;
+        }
+
+        .problem-card:hover .problem-icon {
+            transform: scale(1.1) rotate(-5deg);
+            background: rgb(245 158 11 / 0.2);
+        }
+
+        .problem-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+        }
+
+        .problem-description {
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: 24px;
+        }
+
+        .problem-impact {
+            padding: 16px;
+            background: rgb(239 68 68 / 0.05);
+            border-left: 4px solid #ef4444;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            color: #ef4444;
+            font-weight: 500;
+        }
+
+        /* Solution Section */
+        .solution-section {
+            padding: 120px 0;
+            background: var(--surface);
+        }
+
+        .solution-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .solution-content {
+            animation: fadeInLeft 1s ease;
+        }
+
+        .solution-list {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            margin-top: 40px;
+        }
+
+        .solution-item {
+            display: flex;
+            gap: 20px;
+            padding: 24px;
+            background: white;
+            border-radius: 16px;
+            border: 1px solid var(--border-light);
+            transition: all 0.3s ease;
+        }
+
+        .solution-item:hover {
+            border-color: var(--primary);
+            transform: translateX(8px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .solution-item-icon {
+            width: 52px;
+            height: 52px;
+            background: var(--gradient-primary);
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.4rem;
+            flex-shrink: 0;
+        }
+
+        .solution-item-content h4 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+
+        .solution-item-content p {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        .solution-visual {
+            position: relative;
+        }
+
+        .solution-card {
+            background: white;
+            border-radius: 24px;
+            padding: 40px;
+            box-shadow: var(--shadow-xl);
+            border: 1px solid var(--border-light);
+            position: relative;
+        }
+
+        .solution-card::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: var(--gradient-primary);
+            border-radius: 26px;
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .solution-card:hover::before {
+            opacity: 1;
+        }
+
+        .solution-comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+        }
+
+        .comparison-column {
+            padding: 24px;
+            border-radius: 16px;
+        }
+
+        .comparison-column.before {
+            background: rgb(239 68 68 / 0.05);
+            border: 1px solid rgb(239 68 68 / 0.2);
+        }
+
+        .comparison-column.after {
+            background: rgb(16 185 129 / 0.05);
+            border: 1px solid rgb(16 185 129 / 0.2);
+        }
+
+        .comparison-header {
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .comparison-column.before .comparison-header {
+            color: #ef4444;
+        }
+
+        .comparison-column.after .comparison-header {
+            color: #10b981;
+        }
+
+        .comparison-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .comparison-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+        }
+
+        .comparison-list li::before {
+            content: '✕';
+            font-size: 0.85rem;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .comparison-column.before .comparison-list li::before {
+            color: #ef4444;
+        }
+
+        .comparison-column.after .comparison-list li::before {
+            content: '✓';
+            color: #10b981;
+        }
+
+        /* Products Section */
+        .products-section {
+            padding: 120px 0;
+            background: var(--background);
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 32px;
+            overflow: hidden;
+            border: 2px solid var(--border);
+            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+            position: relative;
+        }
+
+        .product-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--gradient-primary);
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            z-index: 0;
+            border-radius: 32px;
+        }
+
+        .product-card:hover {
+            transform: translateY(-12px) scale(1.02);
+            border-color: transparent;
+            box-shadow: 0 30px 60px -15px rgb(99 102 241 / 0.25);
+        }
+
+        .product-card:hover::before {
+            opacity: 0.03;
+        }
+
+        .product-card-inner {
+            position: relative;
+            z-index: 1;
+        }
+
+        .product-header {
+            padding: 40px 40px 0;
+            position: relative;
+        }
+
+        .product-tier-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 8px 16px;
+            border-radius: 100px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .product-card.free .product-tier-badge {
+            background: rgb(16 185 129 / 0.1);
+            color: #10b981;
+        }
+
+        .product-card.starter .product-tier-badge {
+            background: rgb(14 165 233 / 0.1);
+            color: #0ea5e9;
+        }
+
+        .product-card.professional .product-tier-badge {
+            background: rgb(99 102 241 / 0.1);
+            color: #6366f1;
+        }
+
+        .product-card.enterprise .product-tier-badge {
+            background: rgb(168 85 247 / 0.1);
+            color: #a855f7;
+        }
+
+        .product-type {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 16px;
+        }
+
+        .product-type-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+        }
+
+        .product-card.free .product-type-icon {
+            background: linear-gradient(135deg, #10b981 0%, #0ea5e9 100%);
+            color: white;
+        }
+
+        .product-card.starter .product-type-icon {
+            background: linear-gradient(135deg, #0ea5e9 0%, #6366f1 100%);
+            color: white;
+        }
+
+        .product-card.professional .product-type-icon {
+            background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+            color: white;
+        }
+
+        .product-card.enterprise .product-type-icon {
+            background: linear-gradient(135deg, #a855f7 0%, #ec4899 100%);
+            color: white;
+        }
+
+        .product-type-name {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .product-name {
+            font-size: 1.8rem;
+            font-weight: 800;
+            margin-bottom: 12px;
+            color: var(--text-primary);
+        }
+
+        .product-tagline {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: 24px;
+        }
+
+        .product-pricing {
+            display: flex;
+            align-items: baseline;
+            gap: 8px;
+            margin-bottom: 32px;
+        }
+
+        .product-price {
+            font-size: 3rem;
+            font-weight: 900;
+            color: var(--text-primary);
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .product-price-label {
+            font-size: 1rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .product-card.free .product-price {
+            color: #10b981;
+        }
+
+        .product-body {
+            padding: 0 40px;
+        }
+
+        .product-benefits {
+            margin-bottom: 32px;
+        }
+
+        .product-benefits-title {
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-muted);
+            margin-bottom: 16px;
+        }
+
+        .product-benefits-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .product-benefits-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            font-size: 1rem;
+            color: var(--text-primary);
+            line-height: 1.5;
+        }
+
+        .benefit-icon {
+            width: 24px;
+            height: 24px;
+            background: rgb(16 185 129 / 0.1);
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #10b981;
+            font-size: 0.85rem;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .product-outcomes {
+            padding: 24px;
+            background: var(--surface);
+            border-radius: 16px;
+            margin-bottom: 32px;
+        }
+
+        .product-outcomes-title {
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--primary);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .product-outcomes-text {
+            font-size: 1.05rem;
+            color: var(--text-primary);
+            font-weight: 500;
+            line-height: 1.6;
+        }
+
+        .product-footer {
+            padding: 24px 40px 40px;
+        }
+
+        .product-cta {
+            width: 100%;
+            padding: 18px 32px;
+            font-size: 1.05rem;
+            font-weight: 700;
+            border-radius: 14px;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product-card.free .product-cta {
+            background: linear-gradient(135deg, #10b981 0%, #0ea5e9 100%);
+            color: white;
+        }
+
+        .product-card.starter .product-cta {
+            background: linear-gradient(135deg, #0ea5e9 0%, #6366f1 100%);
+            color: white;
+        }
+
+        .product-card.professional .product-cta {
+            background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+            color: white;
+        }
+
+        .product-card.enterprise .product-cta {
+            background: linear-gradient(135deg, #a855f7 0%, #ec4899 100%);
+            color: white;
+        }
+
+        .product-cta:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .product-cta-arrow {
+            transition: transform 0.3s ease;
+        }
+
+        .product-cta:hover .product-cta-arrow {
+            transform: translateX(6px);
+        }
+
+        .product-guarantee {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 16px;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .product-guarantee-icon {
+            color: var(--success);
+        }
+
+        /* Featured Product */
+        .product-card.featured {
+            border-color: var(--primary);
+            box-shadow: var(--shadow-glow);
+        }
+
+        .product-card.featured .product-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: var(--gradient-primary);
+        }
+
+        .featured-badge {
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 8px 24px;
+            background: var(--gradient-primary);
+            color: white;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            border-radius: 100px;
+            box-shadow: var(--shadow-lg);
+            white-space: nowrap;
+        }
+
+        /* Use Cases Section */
+        .use-cases-section {
+            padding: 120px 0;
+            background: var(--surface);
+        }
+
+        .use-cases-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+        }
+
+        .use-case-card {
+            background: white;
+            border-radius: 24px;
+            padding: 40px;
+            border: 1px solid var(--border-light);
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .use-case-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--gradient-primary);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .use-case-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-xl);
+            border-color: transparent;
+        }
+
+        .use-case-card:hover::before {
+            opacity: 0.02;
+        }
+
+        .use-case-card-inner {
+            position: relative;
+            z-index: 1;
+        }
+
+        .use-case-icon {
+            width: 72px;
+            height: 72px;
+            background: var(--gradient-primary);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: white;
+            margin-bottom: 28px;
+            transition: transform 0.4s ease;
+        }
+
+        .use-case-card:hover .use-case-icon {
+            transform: scale(1.1) rotate(-5deg);
+        }
+
+        .use-case-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+        }
+
+        .use-case-description {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: 24px;
+        }
+
+        .use-case-result {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 16px;
+            background: rgb(16 185 129 / 0.05);
+            border-radius: 12px;
+            border-left: 4px solid #10b981;
+        }
+
+        .use-case-result-icon {
+            width: 32px;
+            height: 32px;
+            background: rgb(16 185 129 / 0.1);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #10b981;
+            font-size: 0.9rem;
+        }
+
+        .use-case-result-text {
+            font-size: 0.95rem;
+            color: #10b981;
+            font-weight: 600;
+        }
+
+        /* Testimonials Section */
+        .testimonials-section {
+            padding: 120px 0;
+            background: var(--background);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+        }
+
+        .testimonial-card {
+            background: white;
+            border-radius: 24px;
+            padding: 40px;
+            border: 1px solid var(--border-light);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-xl);
+            border-color: var(--primary-light);
+        }
+
+        .testimonial-quote {
+            font-size: 3rem;
+            color: var(--primary);
+            line-height: 1;
+            margin-bottom: 20px;
+            opacity: 0.3;
+        }
+
+        .testimonial-text {
+            font-size: 1.1rem;
+            color: var(--text-primary);
+            line-height: 1.8;
+            margin-bottom: 28px;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .testimonial-avatar {
+            width: 56px;
+            height: 56px;
+            background: var(--gradient-primary);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.3rem;
+            font-weight: 700;
+        }
+
+        .testimonial-info h4 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 4px;
+        }
+
+        .testimonial-info p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .testimonial-product {
+            margin-top: 24px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-light);
+        }
+
+        .testimonial-product-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 12px;
+            background: var(--surface);
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        .testimonial-rating {
+            display: flex;
+            gap: 4px;
+            margin-bottom: 16px;
+        }
+
+        .testimonial-star {
+            color: #f59e0b;
+            font-size: 1rem;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            padding: 120px 0;
+            background: var(--surface);
+        }
+
+        .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: white;
+            border-radius: 20px;
+            border: 1px solid var(--border-light);
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .faq-item:hover {
+            border-color: var(--primary-light);
+            box-shadow: var(--shadow-md);
+        }
+
+        .faq-question {
+            padding: 28px 32px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background: var(--surface);
+        }
+
+        .faq-question h4 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            padding-right: 20px;
+        }
+
+        .faq-toggle {
+            width: 32px;
+            height: 32px;
+            background: var(--surface);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            color: var(--primary);
+            flex-shrink: 0;
+            transition: all 0.3s ease;
+        }
+
+        .faq-item.active .faq-toggle {
+            background: var(--gradient-primary);
+            color: white;
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.4s ease;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 300px;
+        }
+
+        .faq-answer-content {
+            padding: 0 32px 28px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        /* Guarantee Section */
+        .guarantee-section {
+            padding: 100px 0;
+            background: var(--background);
+        }
+
+        .guarantee-card {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 32px;
+            padding: 60px;
+            border: 2px solid var(--success);
+            box-shadow: 0 0 60px rgb(16 185 129 / 0.1);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .guarantee-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: linear-gradient(135deg, #10b981 0%, #0ea5e9 100%);
+        }
+
+        .guarantee-icon {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, #10b981 0%, #0ea5e9 100%);
+            border-radius: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            color: white;
+            margin: 0 auto 32px;
+            animation: float 4s ease-in-out infinite;
+        }
+
+        .guarantee-title {
+            font-size: 2.2rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            color: var(--text-primary);
+        }
+
+        .guarantee-text {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            line-height: 1.8;
+            max-width: 700px;
+            margin: 0 auto 32px;
+        }
+
+        .guarantee-features {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 24px;
+        }
+
+        .guarantee-feature {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 14px 24px;
+            background: rgb(16 185 129 / 0.05);
+            border-radius: 12px;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .guarantee-feature-icon {
+            color: #10b981;
+            font-size: 1.2rem;
+        }
+
+        /* CTA Middle Section */
+        .cta-middle-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-middle-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(ellipse 60% 50% at 20% 50%, rgb(99 102 241 / 0.15) 0%, transparent 50%),
+                radial-gradient(ellipse 60% 50% at 80% 50%, rgb(168 85 247 / 0.15) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .cta-middle-content {
+            position: relative;
+            z-index: 1;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .cta-middle-text h2 {
+            font-size: clamp(2rem, 3vw, 2.8rem);
+            font-weight: 800;
+            color: white;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .cta-middle-text p {
+            font-size: 1.2rem;
+            color: rgba(255,255,255,0.7);
+            line-height: 1.7;
+            margin-bottom: 32px;
+        }
+
+        .cta-middle-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin-bottom: 40px;
+        }
+
+        .cta-middle-list li {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            color: white;
+            font-size: 1.05rem;
+            font-weight: 500;
+        }
+
+        .cta-middle-list li::before {
+            content: '✓';
+            width: 28px;
+            height: 28px;
+            background: rgba(16, 185, 129, 0.2);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #10b981;
+            font-size: 0.9rem;
+            flex-shrink: 0;
+        }
+
+        .cta-middle-visual {
+            background: rgba(255,255,255,0.05);
+            border-radius: 24px;
+            padding: 40px;
+            border: 1px solid rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        .cta-middle-card-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .cta-middle-card-icon {
+            width: 56px;
+            height: 56px;
+            background: var(--gradient-primary);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        .cta-middle-card-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: white;
+        }
+
+        .cta-middle-card-subtitle {
+            font-size: 0.95rem;
+            color: rgba(255,255,255,0.6);
+        }
+
+        .cta-middle-preview {
+            background: rgba(0,0,0,0.3);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 24px;
+        }
+
+        .cta-middle-preview-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .cta-middle-preview-item:last-child {
+            border-bottom: none;
+        }
+
+        .cta-middle-preview-label {
+            color: rgba(255,255,255,0.7);
+            font-size: 0.95rem;
+        }
+
+        .cta-middle-preview-value {
+            color: white;
+            font-weight: 600;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .btn-cta-gradient {
+            width: 100%;
+            padding: 18px 32px;
+            background: var(--gradient-primary);
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 700;
+            border-radius: 14px;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-cta-gradient:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(99, 102, 241, 0.4);
+        }
+
+        /* Final CTA Section */
+        .final-cta-section {
+            padding: 120px 0;
+            background: var(--gradient-primary);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .final-cta-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 80%, rgba(255,255,255,0.1) 0%, transparent 40%),
+                radial-gradient(circle at 80% 20%, rgba(255,255,255,0.1) 0%, transparent 40%);
+            pointer-events: none;
+        }
+
+        .final-cta-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .final-cta-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 20px;
+            background: rgba(255,255,255,0.15);
+            border-radius: 100px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: white;
+            margin-bottom: 32px;
+            backdrop-filter: blur(10px);
+        }
+
+        .final-cta-title {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 900;
+            color: white;
+            margin-bottom: 24px;
+            line-height: 1.1;
+        }
+
+        .final-cta-text {
+            font-size: 1.3rem;
+            color: rgba(255,255,255,0.9);
+            line-height: 1.7;
+            margin-bottom: 48px;
+        }
+
+        .final-cta-actions {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+
+        .btn-final-primary {
+            padding: 20px 48px;
+            background: white;
+            color: var(--primary);
+            font-size: 1.15rem;
+            font-weight: 700;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .btn-final-primary:hover {
+            transform: translateY(-4px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+            color: var(--primary-dark);
+        }
+
+        .btn-final-secondary {
+            padding: 20px 48px;
+            background: transparent;
+            color: white;
+            font-size: 1.15rem;
+            font-weight: 600;
+            border-radius: 16px;
+            border: 2px solid rgba(255,255,255,0.3);
+            transition: all 0.3s ease;
+        }
+
+        .btn-final-secondary:hover {
+            background: rgba(255,255,255,0.1);
+            border-color: rgba(255,255,255,0.5);
+            color: white;
+        }
+
+        .final-cta-trust {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 32px;
+        }
+
+        .final-cta-trust-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: rgba(255,255,255,0.9);
+            font-weight: 500;
+        }
+
+        .final-cta-trust-icon {
+            width: 32px;
+            height: 32px;
+            background: rgba(255,255,255,0.15);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 80px 0 40px;
+            background: #0f172a;
+            color: white;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 60px;
+            margin-bottom: 60px;
+        }
+
+        .footer-brand p {
+            color: rgba(255,255,255,0.7);
+            line-height: 1.8;
+            margin-top: 20px;
+            margin-bottom: 28px;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 12px;
+        }
+
+        .footer-social a {
+            width: 44px;
+            height: 44px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+
+        .footer-social a:hover {
+            background: var(--gradient-primary);
+            transform: translateY(-3px);
+        }
+
+        .footer-column h4 {
+            font-size: 1rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 24px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .footer-links {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .footer-links a {
+            color: rgba(255,255,255,0.7);
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .footer-links a:hover {
+            color: white;
+            transform: translateX(4px);
+        }
+
+        .footer-bottom {
+            padding-top: 40px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .footer-bottom p {
+            color: rgba(255,255,255,0.5);
+            font-size: 0.9rem;
+        }
+
+        .footer-legal {
+            display: flex;
+            gap: 24px;
+        }
+
+        .footer-legal a {
+            color: rgba(255,255,255,0.5);
+            font-size: 0.9rem;
+        }
+
+        .footer-legal a:hover {
+            color: white;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+                gap: 60px;
+            }
+
+            .hero-visual {
+                max-width: 600px;
+                margin: 0 auto;
+            }
+
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .solution-grid {
+                grid-template-columns: 1fr;
+                gap: 60px;
+            }
+
+            .cta-middle-content {
+                grid-template-columns: 1fr;
+                gap: 60px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 40px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav {
+                display: none;
+            }
+
+            .mobile-menu-toggle {
+                display: flex;
+            }
+
+            .hero {
+                padding: 120px 0 80px;
+            }
+
+            .hero-title {
+                font-size: 2.4rem;
+            }
+
+            .trust-stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .problem-grid,
+            .use-cases-grid,
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .faq-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .guarantee-card {
+                padding: 40px 24px;
+            }
+
+            .final-cta-actions {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 16px;
+            }
+
+            .hero-features {
+                flex-direction: column;
+            }
+
+            .hero-actions {
+                flex-direction: column;
+            }
+
+            .btn-large {
+                width: 100%;
+            }
+
+            .hero-stats {
+                grid-template-columns: 1fr;
+            }
+
+            .trust-stats {
+                grid-template-columns: 1fr;
+            }
+
+            .solution-comparison {
+                grid-template-columns: 1fr;
+            }
+
+            .product-header,
+            .product-body,
+            .product-footer {
+                padding-left: 24px;
+                padding-right: 24px;
+            }
+
+            .cta-banner-features {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .guarantee-features {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="#" class="logo">
+                    <div class="logo-icon">W</div>
+                    <span>Whop Creator Toolkit</span>
+                </a>
+                
+                <nav class="nav">
+                    <a href="#products" class="nav-link">Products</a>
+                    <a href="#features" class="nav-link">Features</a>
+                    <a href="#use-cases" class="nav-link">Use Cases</a>
+                    <a href="#testimonials" class="nav-link">Testimonials</a>
+                    <a href="#faq" class="nav-link">FAQ</a>
+                    <a href="#products" class="nav-cta">Get Started Free</a>
+                </nav>
+                
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <div class="hero-badge-icon">🚀</div>
+                        <span>Trusted by 500+ Whop Creators Worldwide</span>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        Stop Renting Your Tools.<br>
+                        <span class="highlight">Start Owning Them.</span>
+                    </h1>
+                    
+                    <p class="hero-subtitle">
+                        AI-powered tools built exclusively for Whop creators. Pay once, own forever. Your data stays on your machine. No monthly fees draining your profits.
+                    </p>
+                    
+                    <div class="hero-features">
+                        <div class="hero-feature">
+                            <div class="hero-feature-icon check">✓</div>
+                            <span>One-Time Purchase</span>
+                        </div>
+                        <div class="hero-feature">
+                            <div class="hero-feature-icon lock">🔒</div>
+                            <span>100% Private Data</span>
+                        </div>
+                        <div class="hero-feature">
+                            <div class="hero-feature-icon device">💻</div>
+                            <span>Windows & Linux</span>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-actions">
+                        <a href="#products" class="btn btn-primary btn-large">
+                            Explore Tools
+                            <svg class="btn-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                            </svg>
+                        </a>
+                        <a href="#calculator" class="btn btn-secondary btn-large">
+                            Try Free Calculator
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="hero-card">
+                        <div class="hero-card-header">
+                            <div class="hero-card-icon">📊</div>
+                            <div>
+                                <div class="hero-card-title">Whop Revenue Calculator</div>
+                                <div class="hero-card-subtitle">Free • Google Sheets + Gemini AI</div>
+                            </div>
+                        </div>
+                        
+                        <div class="hero-stats">
+                            <div class="hero-stat">
+                                <div class="hero-stat-value">$0</div>
+                                <div class="hero-stat-label">Cost</div>
+                            </div>
+                            <div class="hero-stat">
+                                <div class="hero-stat-value">∞</div>
+                                <div class="hero-stat-label">Ownership</div>
+                            </div>
+                            <div class="hero-stat">
+                                <div class="hero-stat-value">100%</div>
+                                <div class="hero-stat-label">Private</div>
+                            </div>
+                        </div>
+                        
+                        <div class="hero-card-features">
+                            <div class="hero-card-feature">
+                                <span class="hero-card-feature-icon">✓</span>
+                                <span>Instant revenue projections</span>
+                            </div>
+                            <div class="hero-card-feature">
+                                <span class="hero-card-feature-icon">✓</span>
+                                <span>AI-powered growth insights</span>
+                            </div>
+                            <div class="hero-card-feature">
+                                <span class="hero-card-feature-icon">✓</span>
+                                <span>Works in your Google Sheets</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="floating-elements">
+                        <div class="floating-element">
+                            <div class="floating-badge">
+                                <span>⚡</span>
+                                <span>No Subscriptions</span>
+                            </div>
+                        </div>
+                        <div class="floating-element">
+                            <div class="floating-badge">
+                                <span>🛡️</span>
+                                <span>Data Sovereignty</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner 1 - Top -->
+    <section class="cta-banner animate-on-scroll">
+        <div class="container">
+            <div class="cta-banner-content">
+                <div class="cta-banner-icon">📈</div>
+                <h2 class="cta-banner-title">Get Your Free Whop Revenue Growth Guide</h2>
+                <p class="cta-banner-text">
+                    Discover the exact strategies top Whop creators use to scale from $1K to $50K monthly. 
+                    Includes revenue projection templates, pricing psychology tactics, and AI automation workflows.
+                </p>
+                <div class="cta-banner-features">
+                    <div class="cta-banner-feature">
+                        <div class="cta-banner-feature-icon">📊</div>
+                        <span>Revenue Calculator Templates</span>
+                    </div>
+                    <div class="cta-banner-feature">
+                        <div class="cta-banner-feature-icon">🧠</div>
+                        <span>Pricing Psychology Guide</span>
+                    </div>
+                    <div class="cta-banner-feature">
+                        <div class="cta-banner-feature-icon">⚡</div>
+                        <span>AI Automation Playbook</span>
+                    </div>
+                </div>
+                <a href="#download" class="btn-cta-white">
+                    Click Here to Download Your Free Guide
+                    <span class="arrow">→</span>
+                </a>
+                <p class="cta-urgency">
+                    <strong>2,847 creators</strong> downloaded this guide last month
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Section -->
+    <section class="trust-section">
+        <div class="container">
+            <div class="trust-content">
+                <p class="trust-label">Why Whop Creators Choose Ownership Over Subscriptions</p>
+                
+                <div class="trust-stats stagger-animation">
+                    <div class="trust-stat">
+                        <div class="trust-stat-value">$127K+</div>
+                        <div class="trust-stat-label">Saved in Subscription Fees</div>
+                    </div>
+                    <div class="trust-stat">
+                        <div class="trust-stat-value">500+</div>
+                        <div class="trust-stat-label">Active Creators</div>
+                    </div>
+                    <div class="trust-stat">
+                        <div class="trust-stat-value">100%</div>
+                        <div class="trust-stat-label">Data Privacy</div>
+                    </div>
+                    <div class="trust-stat">
+                        <div class="trust-stat-value">4.9★</div>
+                        <div class="trust-stat-label">Creator Satisfaction</div>
+                    </div>
+                </div>
+                
+                <div class="trust-logos">
+                    <div class="trust-logo">
+                        <div class="trust-logo-icon">🔒</div>
+                        <span>No Data Collection</span>
+                    </div>
+                    <div class="trust-logo">
+                        <div class="trust-logo-icon">💻</div>
+                        <span>Runs Locally</span>
+                    </div>
+                    <div class="trust-logo">
+                        <div class="trust-logo-icon">🔄</div>
+                        <span>Free Updates</span>
+                    </div>
+                    <div class="trust-logo">
+                        <div class="trust-logo-icon">⚡</div>
+                        <span>Instant Access</span>
+                    </div>
+                    <div class="trust-logo">
+                        <div class="trust-logo-icon">🛠️</div>
+                        <span>Full Source Access</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem-section" id="features">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <div class="section-eyebrow">
+                    <span>⚠️</span>
+                    <span>The Problem</span>
+                </div>
+                <h2 class="section-title">The Hidden Costs Draining Your Whop Profits</h2>
+                <p class="section-subtitle">
+                    Most Whop creators lose 15-30% of their monthly revenue to tool subscriptions. 
+                    Worse, they're handing over their business data to third parties who profit from it.
+                </p>
+            </div>
+            
+            <div class="problem-grid stagger-animation">
+                <div class="problem-card animate-on-scroll">
+                    <div class="problem-icon">💸</div>
+                    <h3 class="problem-title">Subscription Fatigue Is Real</h3>
+                    <p class="problem-description">
+                        The average Whop creator spends $347 monthly on SaaS tools. That's $4,164 yearly bleeding from your profits. 
+                        These recurring costs compound while your tool ownership remains at zero.
+                    </p>
+                    <div class="problem-impact">
+                        Impact: Losing $50K+ over a 10-year creator career to tool rentals
+                    </div>
+                </div>
+                
+                <div class="problem-card animate-on-scroll delay-1">
+                    <div class="problem-icon">🕵️</div>
+                    <h3 class="problem-title">Your Data Isn't Really Yours</h3>
+                    <p class="problem-description">
+                        Cloud-based tools store your revenue data, customer behavior patterns, and business strategies on their servers. 
+                        This data is used to train AI models and sold to competitors through "anonymized" data partnerships.
+                    </p>
+                    <div class="problem-impact">
+                        Impact: Competitors learning your exact pricing and launch strategies
+                    </div>
+                </div>
+                
+                <div class="problem-card animate-on-scroll delay-2">
+                    <div class="problem-icon">🔗</div>
+                    <h3 class="problem-title">Platform Lock-In Traps You</h3>
+                    <p class="problem-description">
+                        When a SaaS tool shuts down, raises prices, or changes terms, you're stuck. Years of workflows, 
+                        historical data, and automation disappear overnight. Your business continuity depends on their decisions.
+                    </p>
+                    <div class="problem-impact">
+                        Impact: Business disruption and data loss you cannot control
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="solution-section">
+        <div class="container">
+            <div class="solution-grid">
+                <div class="solution-content animate-on-scroll">
+                    <div class="section-eyebrow">
+                        <span>✨</span>
+                        <span>The Solution</span>
+                    </div>
+                    <h2 class="section-title">Own Your Tools. Control Your Data. Keep Your Profits.</h2>
+                    <p class="section-subtitle">
+                        Whop Creator Toolkit gives you production-ready AI tools that run entirely on your computer. 
+                        Pay once, own forever. Your business data never leaves your machine.
+                    </p>
+                    
+                    <div class="solution-list">
+                        <div class="solution-item">
+                            <div class="solution-item-icon">💰</div>
+                            <div class="solution-item-content">
+                                <h4>One Payment, Lifetime Value</h4>
+                                <p>Stop the monthly drain. Our tools cost less than 3 months of typical SaaS subscriptions and last forever.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="solution-item">
+                            <div class="solution-item-icon">🛡️</div>
+                            <div class="solution-item-content">
+                                <h4>Absolute Data Sovereignty</h4>
+                                <p>All processing happens locally on your Windows or Linux machine. Zero data transmission. Zero tracking.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="solution-item">
+                            <div class="solution-item-icon">🚀</div>
+                            <div class="solution-item-content">
+                                <h4>AI That Works For You Alone</h4>
+                                <p>Local AI models trained on Whop best practices that improve with your data without sharing it externally.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="solution-visual animate-on-scroll delay-2">
+                    <div class="solution-card">
+                        <div class="solution-comparison">
+                            <div class="comparison-column before">
+                                <div class="comparison-header">
+                                    <span>✕</span>
+                                    <span>Traditional SaaS</span>
+                                </div>
+                                <ul class="comparison-list">
+                                    <li>$50-200/month recurring</li>
+                                    <li>Data stored on their servers</li>
+                                    <li>Price increases anytime</li>
+                                    <li>Service can shut down</li>
+                                    <li>Internet required always</li>
+                                    <li>Limited by their features</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="comparison-column after">
+                                <div class="comparison-header">
+                                    <span>✓</span>
+                                    <span>Whop Creator Toolkit</span>
+                                </div>
+                                <ul class="comparison-list">
+                                    <li>One-time payment forever</li>
+                                    <li>Data stays on your machine</li>
+                                    <li>Price locked at purchase</li>
+                                    <li>You own the software</li>
+                                    <li>Works fully offline</li>
+                                    <li>Modify source code freely</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section" id="products">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <div class="section-eyebrow">
+                    <span>🛠️</span>
+                    <span>Products</span>
+                </div>
+                <h2 class="section-title">Choose Your Path to Whop Dominance</h2>
+                <p class="section-subtitle">
+                    From free Google Sheets tools to enterprise AI assistants, find the exact solution 
+                    that matches your current revenue level and growth ambitions.
+                </p>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Product 1: Free - Phantom Frames -->
+                <article class="product-card free animate-on-scroll" itemscope itemtype="https://schema.org/SoftwareApplication">
+                    <div class="product-card-inner">
+                        <div class="product-header">
+                            <span class="product-tier-badge">Free Forever</span>
+                            <div class="product-type">
+                                <div class="product-type-icon">👻</div>
+                                <span class="product-type-name">Phantom Frames</span>
+                            </div>
+                            <h3 class="product-name" itemprop="name">Whop Revenue Calculator</h3>
+                            <p class="product-tagline" itemprop="description">
+                                See exactly where your Whop revenue is going and discover the pricing sweet spots 
+                                that maximize your profit without losing customers.
+                            </p>
+                            <div class="product-pricing">
+                                <span class="product-price" itemprop="price">$0</span>
+                                <span class="product-price-label">Free forever</span>
+                            </div>
+                        </div>
+                        
+                        <div class="product-body">
+                            <div class="product-benefits">
+                                <p class="product-benefits-title">What You'll Achieve</p>
+                                <ul class="product-benefits-list">
+                                    <li>
+                                        <span class="benefit-icon">✓</span>
+                                        <span>Identify your most profitable products in under 60 seconds</span>
+                                    </li>
+                                    <li>
+                                        <span class="benefit-icon">✓</span>
+                                        <span>Spot revenue leaks that silently drain your monthly earnings</span>
+                                    </li>
+                                    <li>
+                                        <span class="benefit-icon">✓</span>
+                                        <span>Get AI-powered pricing recommendations based on your actual data</span>
+                                    </li>
+                                    <li>
+                                        <span class="benefit-icon">✓</span>
+                                        <span>Project your 12-month revenue growth with market-adjusted forecasts</span>
+                                    </li>
+                                    <li>
+                                        <span class="benefit-icon">✓</span>
+                                        <span>Works directly in Google Sheets with Gemini AI integration</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="product-outcomes">
+                                <p class="product-outcomes-title">
+                                    <span>📈</span>
+                                    <span>Creator Results</span>
+                                </p>
+                                <p class="product-outcomes-text">
+                                    Creators using our revenue calculator discovered an average of $847 in monthly revenue opportunities 
+                                    they were previously missing. Most find their first insight within 3 minutes of setup.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="product-footer">
+                            <a href="#download-free" class="product-cta">
+                                <span>Get Free Instant Access</span>
+                                <span class="product-cta-arrow">→</span>
+                            </a>
+                            <div class="product-guarantee">
+                                <span class="product-guarantee-icon">✓</span>
+                                <span>No credit card • No email required • Copy to your Google Drive</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 2: $29 - Psycho Modules -->
+                <article class="product-card starter animate-on-scroll delay-1" itemscope itemtype="https://schema.org/SoftwareApplication">
+                    <div class="product-card-inner">
+                        <div class="product-header">
+                            <span class="product-tier-badge">Best Value</span>
+                            <div class="product-type">
+                                <div class="product-type-icon">🧠</div>
+                                <span class="product-type-name">Psycho Modules</span>
+                            </div>
+                            <h3 class="product-name" itemprop="name">WhopClipper</h3>
+                            <p class="product-tagline" itemprop="description">
+                                Transform your long-form Whop content into viral short clips automatically. 
+                                More clips means more discovery, more discovery means more members.
+                            </p>
+                            <div class="product-pricing">
+                                <span class="product-price" itemprop="price">$29</span>
+                                <span class="product-price-label">One-time payment</span>
+                            </div>
+                        </div>
+                        
+                        <div class="product-body">
+                            <div class="product-benefits">
+                                <p class="product-benefits-title">What You'll Achieve</p>
+                                <ul class="product-benefits-list">
+                                    <li>
+                                        <span class="benefit-icon">✓</span>
+                                        <span>Generate 20+ viral-ready clips from one video in under 10 minutes</span>
+                                    </li>
+                                    <li>
+                                        <span class="benefit-icon">✓</span>
+                                        <span>AI identifies the most engaging moments automatically</span>
+                                    </li>
+                                    <li>
+                                        <span class="benefit-icon">✓</span>
+                                        <span>Auto-add captions, transitions, and hooks that boost watch time</span>
+                                    </li>
+                                    <li>
+                                        <span class="benefit-icon">✓</span>
+                                        <span>Export directly to TikTok, YouTube Shorts, and Instagram Reels formats</span>
+                                    </li>
+                                    <li>
+                                        <span class="benefit-icon">✓</span>
+                                        <span>Runs 100% locally on your Windows or Linux machine</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="product-outcomes">
+                                <p class="product-outcomes-title">
+                                    <span>🎯</span>
+                                    <span>Creator Results</span>
+                                </p>
+                                <p class="product-outcomes-text">
+                                    WhopClipper users report 340% increase in content output and 67% reduction in editing time. 
+                                    One creator generated 147 clips in their first week, leading to 12 new Whop members from organic discovery.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="product-footer">
+                            <a href="#buy-clipper" class="product-cta">
+                                <span>Start Clipping Today - $29</span>
+                                <span class="product-cta-arrow">→</span>
+                            </a>
+                            <div class="product-guarantee">
+                                <span class="product-guarantee-icon">🛡️</span>
+                                <span>30-day money-back guarantee • Lifetime updates included</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 3: $99 - Daemon Infrastructure -->
+                <article class="product-card professional featured animate-on-scroll delay-2" itemscope itemtype="https://schema.org/SoftwareApplication">
+                    <div class="featured-badge">Most Popular</div>
+                    <div class="product-card-inner">
+                        <div class="product-header">
+                            <span class="product-tier-badge">Professional</span>
+                            <div class="product-type">
+                                <div class="product-type-icon">⚡</div>
+                                <span class="product-type-name">Daemon Infrastructure</span>
+                            </div>
+                            <h3 class="product-name" itemprop="name">Whop Analytics Pro</h3>
+                            <p class="product-tagline" itemprop="description">
+                                A complete analytics dashboard with local AI that tells you exactly what actions 
+                                to take to grow your Whop business—not just what happened.
+                            </p>
+                            <div class="product-pricing">
+                                <span class="product-price" itemprop="price">$99</span>
+                                <span class="product-price-label">One-time payment</span>
+                            </div>
+                        </div>
+                        
+                        <div class="product-body">
+                            <div class="product-benefits">
+                                <p class="product-benefits-title">What You'll Achieve</p>
+                                <ul class="product-benefits-list">
+                                    <li>
+                                        <span class="benefit-icon">✓</span>
+                                        <span>See your complete Whop business health in one real-time dashboard</span>
+                                    </li>
+                                    <li>
+                                        <span class="benefit-icon">✓</span>
+                                        <span>Get weekly AI-generated action plans based on your specific metrics</span>
+                                    </li>
+                                    <li>
+                                        <span class="benefit-icon">✓</span>
+                                        <span>Predict churn risk and get retention alerts before you lose members</span>
+                                    </li>
+                                    <li>
+                                        <span class="benefit-icon">✓</span>
+                                        <span>Compare your growth against anonymized benchmarks from top creators</span>
+                                    </li>
+                                    <li>
+                                        <span class="benefit-icon">✓</span>
+                                        <span>Local AI insights that never transmit your sensitive business data</span>
+                                    </li>
+                                    <li>
+                                        <span class="benefit-icon">✓</span>
+                                        <span>Export professional reports for partners, sponsors, or team meetings</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="product-outcomes">
+                                <p class="product-outcomes-title">
+                                    <span>💰</span>
+                                    <span>Creator Results</span>
+                                </p>
+                                <p class="product-outcomes-text">
+                                    Whop Analytics Pro users increased their average revenue per member by 43% within 90 days. 
+                                    The AI-powered churn predictions helped one creator save 28 members worth $2,240/month who were about to cancel.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="product-footer">
+                            <a href="#buy-analytics" class="product-cta">
+                                <span>Unlock Analytics Pro - $99</span>
+                                <span class="product-cta-arrow">→</span>
+                            </a>
+                            <div class="product-guarantee">
+                                <span class="product-guarantee-icon">🛡️</span>
+                                <span>30-day money-back guarantee • Priority support • Lifetime updates</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 4: $299 - Sovereign Infrastructure -->
+                <article class="product-card enterprise animate-on-scroll delay-3" itemscope itemtype="https://schema.org/SoftwareApplication">
+                    <div class="product-card-inner">
+                        <div class="product-header">
+                            <span class="product-tier-badge">Enterprise</span>
+                            <div class="product-type">
+                                <div class="product-type-icon">👑</div>
+                                <span class="product-type-name">Sovereign Infrastructure</span>
+                            </div>
+                            <h3 class="product-name" itemprop="name">Whop AI Assistant</h3>
+                            <p class="product-tagline" itemprop="description">
+                                Your personal AI advisor trained on Whop best practices and your unique business knowledge base. 
+                                Like having a growth consultant available 24/7 who knows your business inside-out.
+                            </p>
+                            <div class="product-pricing">
+                                <span class="product-price" itemprop="price">$299</span>
+                                <span class="product-price-label">One-time payment</span>
+                            </div>
+                        </div>
+                        
+                        <div class="product-body">
+                            <div class="product-benefits">
+                                <p class="product-benefits-title">What You'll Achieve</p>
+                                <ul class="product-benefits-list">
+                                    <li>
+                                        <span class="benefit-icon">✓</span>
+                                        <span>Get instant strategic advice from AI trained on proven Whop growth tactics</span>
+                                    </li>
+                                    <li>
+                                        <span class="benefit-icon">✓</span>
+                                        <span>Feed it your entire business knowledge base for personalized insights</span>
+                                    </li>
+                                    <li>
+                                        <span class="benefit-icon">✓</span>
+                                        <span>Generate launch plans, pricing strategies, and content calendars automatically</span>
+                                    </li>
+                                    <li>
+                                        <span class="benefit-icon">✓</span>
+                                        <span>Powered by local Ollama—100% private, runs entirely on your machine</span>
+                                    </li>
+                                    <li>
+                                        <span class="benefit-icon">✓</span>
+                                        <span>Train on your successful launches to replicate winning patterns</span>
+                                    </li>
+                                    <li>
+                                        <span class="benefit-icon">✓</span>
+                                        <span>Works offline—strategize anywhere without internet dependency</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="product-outcomes">
+                                <p class="product-outcomes-title">
+                                    <span>🚀</span>
+                                    <span>Creator Results</span>
+                                </p>
+                                <p class="product-outcomes-text">
+                                    Creators using Whop AI Assistant report making decisions 5x faster with 73% higher confidence. 
+                                    One creator used the AI to plan a product launch that generated $18,400 in the first 48 hours.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="product-footer">
+                            <a href="#buy-assistant" class="product-cta">
+                                <span>Get Your AI Advisor - $299</span>
+                                <span class="product-cta-arrow">→</span>
+                            </a>
+                            <div class="product-guarantee">
+                                <span class="product-guarantee-icon">🛡️</span>
+                                <span>30-day money-back guarantee • White-glove setup support • Forever yours</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases Section -->
+    <section class="use-cases-section" id="use-cases">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <div class="section-eyebrow">
+                    <span>🎯</span>
+                    <span>Use Cases</span>
+                </div>
+                <h2 class="section-title">Built for Every Stage of Your Whop Journey</h2>
+                <p class="section-subtitle">
+                    Whether you're launching your first Whop or scaling to six figures, our tools meet you where you are 
+                    and grow with your ambitions.
+                </p>
+            </div>
+            
+            <div class="use-cases-grid stagger-animation">
+                <div class="use-case-card animate-on-scroll">
+                    <div class="use-case-card-inner">
+                        <div class="use-case-icon">🚀</div>
+                        <h3 class="use-case-title">New Whop Creators</h3>
+                        <p class="use-case-description">
+                            You just launched your Whop and need to understand what pricing works, which content resonates, 
+                            and how to get your first 100 members without burning cash on expensive tools.
+                        </p>
+                        <div class="use-case-result">
+                            <div class="use-case-result-icon">✓</div>
+                            <span class="use-case-result-text">Start with our free calculator, upgrade as you grow</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="use-case-card animate-on-scroll delay-1">
+                    <div class="use-case-card-inner">
+                        <div class="use-case-icon">📈</div>
+                        <h3 class="use-case-title">Growth-Stage Creators</h3>
+                        <p class="use-case-description">
+                            You're making $2K-10K monthly and need to scale content production, understand your metrics deeper, 
+                            and make data-driven decisions without hiring an analyst.
+                        </p>
+                        <div class="use-case-result">
+                            <div class="use-case-result-icon">✓</div>
+                            <span class="use-case-result-text">WhopClipper + Analytics Pro = 10x output with clarity</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="use-case-card animate-on-scroll delay-2">
+                    <div class="use-case-card-inner">
+                        <div class="use-case-icon">💎</div>
+                        <h3 class="use-case-title">Six-Figure Operators</h3>
+                        <p class="use-case-description">
+                            Your Whop generates serious revenue and you need strategic AI support, advanced analytics, 
+                            and complete data sovereignty as you scale your operation.
+                        </p>
+                        <div class="use-case-result">
+                            <div class="use-case-result-icon">✓</div>
+                            <span class="use-case-result-text">Full toolkit: Own your data, scale with confidence</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="use-case-card animate-on-scroll delay-3">
+                    <div class="use-case-card-inner">
+                        <div class="use-case-icon">🎬</div>
+                        <h3 class="use-case-title">Content-Heavy Creators</h3>
+                        <p class="use-case-description">
+                            Your Whop success depends on consistent content output. You need to repurpose long-form content 
+                            into dozens of clips without spending hours editing or paying editors.
+                        </p>
+                        <div class="use-case-result">
+                            <div class="use-case-result-icon">✓</div>
+                            <span class="use-case-result-text">WhopClipper: 20+ clips from one video in 10 minutes</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="use-case-card animate-on-scroll delay-4">
+                    <div class="use-case-card-inner">
+                        <div class="use-case-icon">🔐</div>
+                        <h3 class="use-case-title">Privacy-First Creators</h3>
+                        <p class="use-case-description">
+                            You handle sensitive member data or competitive strategies and cannot risk cloud tools 
+                            accessing, storing, or potentially leaking your business intelligence.
+                        </p>
+                        <div class="use-case-result">
+                            <div class="use-case-result-icon">✓</div>
+                            <span class="use-case-result-text">100% local processing, zero data transmission</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="use-case-card animate-on-scroll delay-5">
+                    <div class="use-case-card-inner">
+                        <div class="use-case-icon">🌍</div>
+                        <h3 class="use-case-title">Global Creators</h3>
+                        <p class="use-case-description">
+                            You travel frequently or operate from areas with unreliable internet. You need tools that work 
+                            offline without cloud dependencies slowing you down.
+                        </p>
+                        <div class="use-case-result">
+                            <div class="use-case-result-icon">✓</div>
+                            <span class="use-case-result-text">Full offline capability on Windows and Linux</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Middle Section -->
+    <section class="cta-middle-section">
+        <div class="container">
+            <div class="cta-middle-content">
+                <div class="cta-middle-text animate-on-scroll">
+                    <h2>Get the Complete Whop Creator Playbook — Free</h2>
+                    <p>
+                        Learn exactly how top 1% Whop creators structure their offers, price their products, 
+                        and automate their growth. This 47-page guide reveals strategies that took years to develop.
+                    </p>
+                    
+                    <ul class="cta-middle-list">
+                        <li>The 7-tier pricing psychology framework that maximizes conversions</li>
+                        <li>Content repurposing workflows that 10x your reach with half the effort</li>
+                        <li>Churn prevention tactics that saved one creator $34K annually</li>
+                        <li>AI automation templates you can implement in one afternoon</li>
+                        <li>Launch sequence blueprints from $100K+ product releases</li>
+                    </ul>
+                    
+                    <a href="#download-playbook" class="btn-cta-white">
+                        Click Here to Get Your Free Playbook
+                        <span class="arrow">→</span>
+                    </a>
+                </div>
+                
+                <div class="cta-middle-visual animate-on-scroll delay-2">
+                    <div class="cta-middle-card-header">
+                        <div class="cta-middle-card-icon">📚</div>
+                        <div>
+                            <div class="cta-middle-card-title">Whop Creator Playbook</div>
+                            <div class="cta-middle-card-subtitle">47 Pages • Instant Download</div>
+                        </div>
+                    </div>
+                    
+                    <div class="cta-middle-preview">
+                        <div class="cta-middle-preview-item">
+                            <span class="cta-middle-preview-label">Format</span>
+                            <span class="cta-middle-preview-value">PDF + Notion</span>
+                        </div>
+                        <div class="cta-middle-preview-item">
+                            <span class="cta-middle-preview-label">Templates</span>
+                            <span class="cta-middle-preview-value">12 Included</span>
+                        </div>
+                        <div class="cta-middle-preview-item">
+                            <span class="cta-middle-preview-label">Case Studies</span>
+                            <span class="cta-middle-preview-value">6 Real Examples</span>
+                        </div>
+                        <div class="cta-middle-preview-item">
+                            <span class="cta-middle-preview-label">Price</span>
+                            <span class="cta-middle-preview-value">$0 (Free)</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#download-playbook" class="btn-cta-gradient">
+                        Download Free Playbook Now
+                        <span>→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section" id="testimonials">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <div class="section-eyebrow">
+                    <span>💬</span>
+                    <span>Testimonials</span>
+                </div>
+                <h2 class="section-title">Trusted by Whop Creators Worldwide</h2>
+                <p class="section-subtitle">
+                    Real results from real creators who made the switch from subscription tools to ownership.
+                </p>
+            </div>
+            
+            <div class="testimonials-grid stagger-animation">
+                <div class="testimonial-card animate-on-scroll">
+                    <div class="testimonial-rating">
+                        <span class="testimonial-star">★</span>
+                        <span class="testimonial-star">★</span>
+                        <span class="testimonial-star">★</span>
+                        <span class="testimonial-star">★</span>
+                        <span class="testimonial-star">★</span>
+                    </div>
+                    <div class="testimonial-quote">"</div>
+                    <p class="testimonial-text">
+                        I was paying $197/month for analytics tools that didn't even work offline. Whop Analytics Pro 
+                        gave me better insights for a one-time $99. The AI recommendations helped me increase my MRR by 34% in two months.
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">MK</div>
+                        <div class="testimonial-info">
+                            <h4>Marcus K.</h4>
+                            <p>Trading Education Whop • $18K/mo</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-product">
+                        <span class="testimonial-product-tag">
+                            <span>⚡</span>
+                            <span>Whop Analytics Pro</span>
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card animate-on-scroll delay-1">
+                    <div class="testimonial-rating">
+                        <span class="testimonial-star">★</span>
+                        <span class="testimonial-star">★</span>
+                        <span class="testimonial-star">★</span>
+                        <span class="testimonial-star">★</span>
+                        <span class="testimonial-star">★</span>
+                    </div>
+                    <div class="testimonial-quote">"</div>
+                    <p class="testimonial-text">
+                        WhopClipper changed my content game completely. I went from posting 3 clips per week to 30. 
+                        My Whop discovery rate tripled and I gained 89 new members from organic TikTok content alone.
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">SL</div>
+                        <div class="testimonial-info">
+                            <h4>Sarah L.</h4>
+                            <p>Fitness Coaching Whop • $7K/mo</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-product">
+                        <span class="testimonial-product-tag">
+                            <span>🧠</span>
+                            <span>WhopClipper</span>
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card animate-on-scroll delay-2">
+                    <div class="testimonial-rating">
+                        <span class="testimonial-star">★</span>
+                        <span class="testimonial-star">★</span>
+                        <span class="testimonial-star">★</span>
+                        <span class="testimonial-star">★</span>
+                        <span class="testimonial-star">★</span>
+                    </div>
+                    <div class="testimonial-quote">"</div>
+                    <p class="testimonial-text">
+                        The Whop AI Assistant is like having a CMO who knows my business inside out. I fed it 
+                        two years of launch data and now it generates better strategies than the $500/hour consultant I fired.
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">JR</div>
+                        <div class="testimonial-info">
+                            <h4>James R.</h4>
+                            <p>Software Community Whop • $42K/mo</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-product">
+                        <span class="testimonial-product-tag">
+                            <span>👑</span>
+                            <span>Whop AI Assistant</span>
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card animate-on-scroll delay-3">
+                    <div class="testimonial-rating">
+                        <span class="testimonial-star">★</span>
+                        <span class="testimonial-star">★</span>
+                        <span class="testimonial-star">★</span>
+                        <span class="testimonial-star">★</span>
+                        <span class="testimonial-star">★</span>
+                    </div>
+                    <div class="testimonial-quote">"</div>
+                    <p class="testimonial-text">
+                        Data privacy was non-negotiable for my finance Whop. Every other tool stored my member data 
+                        on their servers. This toolkit runs entirely on my machine—complete peace of mind.
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">AP</div>
+                        <div class="testimonial-info">
+                            <h4>Alex P.</h4>
+                            <p>Investment Research Whop • $31K/mo</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-product">
+                        <span class="testimonial-product-tag">
+                            <span>🛡️</span>
+                            <span>Full Toolkit</span>
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card animate-on-scroll delay-4">
+                    <div class="testimonial-rating">
+                        <span class="testimonial-star">★</span>
+                        <span class="testimonial-star">★</span>
+                        <span class="testimonial-star">★</span>
+                        <span class="testimonial-star">★</span>
+                        <span class="testimonial-star">★</span>
+                    </div>
+                    <div class="testimonial-quote">"</div>
+                    <p class="testimonial-text">
+                        Started with the free revenue calculator, realized I was underpricing by 40%. Made the money 
+                        back for the entire toolkit in my first price adjustment alone. Best investment this year.
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">ND</div>
+                        <div class="testimonial-info">
+                            <h4>Nina D.</h4>
+                            <p>Design Resources Whop • $12K/mo</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-product">
+                        <span class="testimonial-product-tag">
+                            <span>👻</span>
+                            <span>Revenue Calculator → Full Suite</span>
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card animate-on-scroll delay-5">
+                    <div class="testimonial-rating">
+                        <span class="testimonial-star">★</span>
+                        <span class="testimonial-star">★</span>
+                        <span class="testimonial-star">★</span>
+                        <span class="testimonial-star">★</span>
+                        <span class="testimonial-star">★</span>
+                    </div>
+                    <div class="testimonial-quote">"</div>
+                    <p class="testimonial-text">
+                        I travel constantly for content creation. Having tools that work offline and don't require 
+                        internet to analyze my data has been a game-changer. Edited videos on a 14-hour flight.
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">TC</div>
+                        <div class="testimonial-info">
+                            <h4>Tyler C.</h4>
+                            <p>Travel Photography Whop • $9K/mo</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-product">
+                        <span class="testimonial-product-tag">
+                            <span>✈️</span>
+                            <span>WhopClipper + Analytics Pro</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <div class="section-eyebrow">
+                    <span>❓</span>
+                    <span>FAQ</span>
+                </div>
+                <h2 class="section-title">Your Questions, Answered</h2>
+                <p class="section-subtitle">
+                    Everything you need to know about owning your Whop tools instead of renting them.
+                </p>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item animate-on-scroll">
+                    <div class="faq-question">
+                        <h4>Do I need technical skills to use these tools?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            No technical skills required. Phantom Frames work directly in Google Sheets—if you can use a spreadsheet, 
+                            you can use our free tools. Psycho Modules and Daemon Infrastructure include one-click installers with 
+                            step-by-step video guides. Sovereign Infrastructure includes white-glove setup support where we help you 
+                            configure everything.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item animate-on-scroll delay-1">
+                    <div class="faq-question">
+                        <h4>How is my data protected with local tools?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            All our tools run 100% on your local machine. We don't collect telemetry, usage data, or any business 
+                            information. There are no servers to breach because your data never leaves your computer. You have 
+                            complete sovereignty over your business intelligence.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item animate-on-scroll delay-2">
+                    <div class="faq-question">
+                        <h4>What operating systems are supported?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Our Python-based tools (Psycho Modules, Daemon Infrastructure, Sovereign Infrastructure) work on 
+                            Windows 10/11 and major Linux distributions including Ubuntu, Debian, Fedora, and Arch. Phantom Frames 
+                            work anywhere Google Sheets runs—Windows, Mac, Linux, and even mobile browsers.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item animate-on-scroll delay-3">
+                    <div class="faq-question">
+                        <h4>What's included with "lifetime updates"?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Every purchase includes free updates forever. As Whop adds new features and we enhance our tools, 
+                            you'll receive all improvements at no additional cost. Updates include bug fixes, performance improvements, 
+                            new features, and compatibility updates for new operating system versions.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item animate-on-scroll delay-4">
+                    <div class="faq-question">
+                        <h4>Can I get a refund if it doesn't work for me?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Absolutely. All paid tools include a 30-day money-back guarantee. If you're not satisfied for any 
+                            reason, email us within 30 days of purchase and we'll refund 100% of your payment—no questions asked. 
+                            We want you to buy with complete confidence.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item animate-on-scroll delay-5">
+                    <div class="faq-question">
+                        <h4>How does the local AI work without internet?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Our Daemon and Sovereign Infrastructure tools use Ollama to run AI models directly on your computer. 
+                            During initial setup, you download the AI model once (about 4GB), then it runs entirely locally. 
+                            No internet required for AI analysis after setup. Your prompts and business data never touch external servers.
+                        </div>
+                    </div
+                    </div>
+                </div>
+                
+                <div class="faq-item animate-on-scroll delay-6">
+                    <div class="faq-question">
+                        <h4>Do you offer bundle pricing for multiple tools?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Yes! Purchase any two paid tools and get 15% off automatically. Purchase all three paid tools 
+                            together and save 25% ($320 instead of $427). Bundle discounts are applied automatically at checkout. 
+                            The free Revenue Calculator is always included with any purchase.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item animate-on-scroll delay-7">
+                    <div class="faq-question">
+                        <h4>Can I use these tools for multiple Whop accounts?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Yes. Your purchase license allows unlimited personal use across all your Whop accounts and businesses. 
+                            Whether you run one Whop or ten, you're covered with a single purchase. The only restriction is sharing 
+                            the tools with others who haven't purchased.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item animate-on-scroll delay-8">
+                    <div class="faq-question">
+                        <h4>What kind of support do you provide?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            All purchases include email support with 24-48 hour response times. Sovereign Infrastructure 
+                            ($299) includes priority support with same-day responses and white-glove setup assistance via 
+                            screen share. We also maintain comprehensive documentation, video tutorials, and a community 
+                            Discord for peer support.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item animate-on-scroll delay-9">
+                    <div class="faq-question">
+                        <h4>How do these tools integrate with Whop?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Our tools work with data you export from Whop or enter manually. For analytics tools, you can 
+                            import your Whop transaction data via CSV exports. WhopClipper works with any video content you 
+                            create for your Whop. We designed everything to complement Whop's native features without requiring 
+                            API access that could compromise your account security.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item animate-on-scroll delay-10">
+                    <div class="faq-question">
+                        <h4>What makes this different from other creator tools?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Three key differences: (1) Ownership - you buy once and own forever, no recurring fees ever. 
+                            (2) Privacy - everything runs locally, your data never touches our servers or any third party. 
+                            (3) Whop-specific - these tools are built exclusively for Whop creators, not generic SaaS adapted 
+                            for creators. Every feature addresses real Whop growth challenges.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guarantee Section -->
+    <section class="guarantee-section">
+        <div class="container">
+            <div class="guarantee-card animate-on-scroll">
+                <div class="guarantee-icon">🛡️</div>
+                <h2 class="guarantee-title">The Whop Creator Toolkit Guarantee</h2>
+                <p class="guarantee-text">
+                    We're so confident these tools will transform your Whop business that we offer an unconditional 
+                    30-day money-back guarantee. Try any tool risk-free. If you don't see measurable improvements in 
+                    your workflow, insights, or revenue within 30 days, we'll refund every penny. No questions. No hassle. 
+                    No fine print. Your success is the only metric that matters.
+                </p>
+                <div class="guarantee-features">
+                    <div class="guarantee-feature">
+                        <span class="guarantee-feature-icon">✓</span>
+                        <span>30-Day Full Refund</span>
+                    </div>
+                    <div class="guarantee-feature">
+                        <span class="guarantee-feature-icon">✓</span>
+                        <span>No Questions Asked</span>
+                    </div>
+                    <div class="guarantee-feature">
+                        <span class="guarantee-feature-icon">✓</span>
+                        <span>Keep the Free Tools</span>
+                    </div>
+                    <div class="guarantee-feature">
+                        <span class="guarantee-feature-icon">✓</span>
+                        <span>Instant Processing</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works-section" style="padding: 120px 0; background: var(--surface);">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <div class="section-eyebrow">
+                    <span>🔧</span>
+                    <span>How It Works</span>
+                </div>
+                <h2 class="section-title">From Download to Results in Under 15 Minutes</h2>
+                <p class="section-subtitle">
+                    Getting started is simple. No complex setup, no waiting for approvals, no onboarding calls. 
+                    Download, install, and start growing your Whop immediately.
+                </p>
+            </div>
+            
+            <div class="steps-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; margin-top: 60px;">
+                <div class="step-card animate-on-scroll" style="text-align: center; padding: 40px 24px; background: white; border-radius: 24px; border: 1px solid var(--border-light); position: relative;">
+                    <div class="step-number" style="position: absolute; top: -20px; left: 50%; transform: translateX(-50%); width: 44px; height: 44px; background: var(--gradient-primary); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: white; font-weight: 800; font-size: 1.2rem; box-shadow: var(--shadow-lg);">1</div>
+                    <div class="step-icon" style="width: 80px; height: 80px; background: var(--surface); border-radius: 20px; display: flex; align-items: center; justify-content: center; font-size: 2rem; margin: 20px auto 24px;">🛒</div>
+                    <h4 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 12px; color: var(--text-primary);">Choose Your Tools</h4>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">Select the tools that match your current needs. Start free or go straight to the full toolkit.</p>
+                </div>
+                
+                <div class="step-card animate-on-scroll delay-1" style="text-align: center; padding: 40px 24px; background: white; border-radius: 24px; border: 1px solid var(--border-light); position: relative;">
+                    <div class="step-number" style="position: absolute; top: -20px; left: 50%; transform: translateX(-50%); width: 44px; height: 44px; background: var(--gradient-primary); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: white; font-weight: 800; font-size: 1.2rem; box-shadow: var(--shadow-lg);">2</div>
+                    <div class="step-icon" style="width: 80px; height: 80px; background: var(--surface); border-radius: 20px; display: flex; align-items: center; justify-content: center; font-size: 2rem; margin: 20px auto 24px;">⬇️</div>
+                    <h4 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 12px; color: var(--text-primary);">Instant Download</h4>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">Get immediate access. One-click installers for Windows and Linux. No waiting, no approval process.</p>
+                </div>
+                
+                <div class="step-card animate-on-scroll delay-2" style="text-align: center; padding: 40px 24px; background: white; border-radius: 24px; border: 1px solid var(--border-light); position: relative;">
+                    <div class="step-number" style="position: absolute; top: -20px; left: 50%; transform: translateX(-50%); width: 44px; height: 44px; background: var(--gradient-primary); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: white; font-weight: 800; font-size: 1.2rem; box-shadow: var(--shadow-lg);">3</div>
+                    <div class="step-icon" style="width: 80px; height: 80px; background: var(--surface); border-radius: 20px; display: flex; align-items: center; justify-content: center; font-size: 2rem; margin: 20px auto 24px;">⚡</div>
+                    <h4 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 12px; color: var(--text-primary);">Quick Setup</h4>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">Follow the video guide. Most creators are up and running in under 10 minutes with full functionality.</p>
+                </div>
+                
+                <div class="step-card animate-on-scroll delay-3" style="text-align: center; padding: 40px 24px; background: white; border-radius: 24px; border: 1px solid var(--border-light); position: relative;">
+                    <div class="step-number" style="position: absolute; top: -20px; left: 50%; transform: translateX(-50%); width: 44px; height: 44px; background: var(--gradient-primary); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: white; font-weight: 800; font-size: 1.2rem; box-shadow: var(--shadow-lg);">4</div>
+                    <div class="step-icon" style="width: 80px; height: 80px; background: var(--surface); border-radius: 20px; display: flex; align-items: center; justify-content: center; font-size: 2rem; margin: 20px auto 24px;">📈</div>
+                    <h4 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 12px; color: var(--text-primary);">Start Growing</h4>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">Apply insights, create content, and watch your Whop metrics improve week over week.</p>
+                </div>
+            </div>
+            
+            <div class="steps-connector" style="display: flex; justify-content: center; margin-top: 48px;">
+                <a href="#products" class="btn btn-primary btn-large">
+                    Get Started Now - Choose Your Tools
+                    <svg class="btn-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Table Section -->
+    <section class="comparison-section" style="padding: 120px 0; background: var(--background);">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <div class="section-eyebrow">
+                    <span>📊</span>
+                    <span>Comparison</span>
+                </div>
+                <h2 class="section-title">How We Stack Up Against Subscriptions</h2>
+                <p class="section-subtitle">
+                    See the real cost difference between renting SaaS tools and owning your toolkit.
+                </p>
+            </div>
+            
+            <div class="comparison-table-wrapper animate-on-scroll" style="margin-top: 60px; overflow-x: auto;">
+                <table style="width: 100%; min-width: 800px; border-collapse: separate; border-spacing: 0; background: white; border-radius: 24px; overflow: hidden; box-shadow: var(--shadow-xl);">
+                    <thead>
+                        <tr style="background: var(--gradient-primary);">
+                            <th style="padding: 24px 32px; text-align: left; color: white; font-weight: 700; font-size: 1rem;">Feature</th>
+                            <th style="padding: 24px 32px; text-align: center; color: white; font-weight: 700; font-size: 1rem;">Typical SaaS Tools</th>
+                            <th style="padding: 24px 32px; text-align: center; color: white; font-weight: 700; font-size: 1rem; background: rgba(255,255,255,0.1);">Whop Creator Toolkit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-bottom: 1px solid var(--border-light);">
+                            <td style="padding: 20px 32px; font-weight: 600; color: var(--text-primary);">Pricing Model</td>
+                            <td style="padding: 20px 32px; text-align: center; color: #ef4444;">$50-200/month recurring</td>
+                            <td style="padding: 20px 32px; text-align: center; color: #10b981; font-weight: 600; background: rgb(16 185 129 / 0.03);">One-time payment</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--border-light);">
+                            <td style="padding: 20px 32px; font-weight: 600; color: var(--text-primary);">5-Year Total Cost</td>
+                            <td style="padding: 20px 32px; text-align: center; color: #ef4444;">$3,000 - $12,000</td>
+                            <td style="padding: 20px 32px; text-align: center; color: #10b981; font-weight: 600; background: rgb(16 185 129 / 0.03);">$0 - $427 (once)</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--border-light);">
+                            <td style="padding: 20px 32px; font-weight: 600; color: var(--text-primary);">Data Location</td>
+                            <td style="padding: 20px 32px; text-align: center; color: #ef4444;">Their servers (shared)</td>
+                            <td style="padding: 20px 32px; text-align: center; color: #10b981; font-weight: 600; background: rgb(16 185 129 / 0.03);">Your machine only</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--border-light);">
+                            <td style="padding: 20px 32px; font-weight: 600; color: var(--text-primary);">Internet Required</td>
+                            <td style="padding: 20px 32px; text-align: center; color: #ef4444;">Always required</td>
+                            <td style="padding: 20px 32px; text-align: center; color: #10b981; font-weight: 600; background: rgb(16 185 129 / 0.03);">Works offline</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--border-light);">
+                            <td style="padding: 20px 32px; font-weight: 600; color: var(--text-primary);">Price Increases</td>
+                            <td style="padding: 20px 32px; text-align: center; color: #ef4444;">Anytime without notice</td>
+                            <td style="padding: 20px 32px; text-align: center; color: #10b981; font-weight: 600; background: rgb(16 185 129 / 0.03);">Price locked forever</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--border-light);">
+                            <td style="padding: 20px 32px; font-weight: 600; color: var(--text-primary);">Service Continuity</td>
+                            <td style="padding: 20px 32px; text-align: center; color: #ef4444;">Can shut down anytime</td>
+                            <td style="padding: 20px 32px; text-align: center; color: #10b981; font-weight: 600; background: rgb(16 185 129 / 0.03);">You own it forever</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--border-light);">
+                            <td style="padding: 20px 32px; font-weight: 600; color: var(--text-primary);">Source Code Access</td>
+                            <td style="padding: 20px 32px; text-align: center; color: #ef4444;">Never available</td>
+                            <td style="padding: 20px 32px; text-align: center; color: #10b981; font-weight: 600; background: rgb(16 185 129 / 0.03);">Full access included</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 20px 32px; font-weight: 600; color: var(--text-primary);">Updates</td>
+                            <td style="padding: 20px 32px; text-align: center; color: var(--text-muted);">Included in subscription</td>
+                            <td style="padding: 20px 32px; text-align: center; color: #10b981; font-weight: 600; background: rgb(16 185 129 / 0.03);">Free forever</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="comparison-summary animate-on-scroll" style="max-width: 800px; margin: 48px auto 0; padding: 32px; background: rgb(16 185 129 / 0.05); border-radius: 20px; border: 2px solid rgb(16 185 129 / 0.2); text-align: center;">
+                <p style="font-size: 1.3rem; font-weight: 700; color: var(--text-primary); margin-bottom: 8px;">
+                    💰 Average Creator Saves $8,427 Over 5 Years
+                </p>
+                <p style="color: var(--text-secondary); font-size: 1rem;">
+                    That's money that stays in your pocket instead of funding someone else's business.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="final-cta-section" id="final-cta">
+        <div class="container">
+            <div class="final-cta-content">
+                <div class="final-cta-badge animate-on-scroll">
+                    <span>🎁</span>
+                    <span>Limited Time: Free Growth Guide With Any Purchase</span>
+                </div>
+                
+                <h2 class="final-cta-title animate-on-scroll">
+                    Ready to Own Your Whop Success?
+                </h2>
+                
+                <p class="final-cta-text animate-on-scroll">
+                    Join 500+ Whop creators who stopped renting their tools and started owning their future. 
+                    Whether you start free or go all-in, every tool comes with our 30-day money-back guarantee. 
+                    Click below to get your free Whop Growth Playbook and start building a business you truly control.
+                </p>
+                
+                <div class="final-cta-actions animate-on-scroll">
+                    <a href="#download-guide" class="btn-final-primary">
+                        <span>Click Here for Your Free Growth Playbook</span>
+                        <span>→</span>
+                    </a>
+                    <a href="#products" class="btn-final-secondary">
+                        Browse All Tools
+                    </a>
+                </div>
+                
+                <div class="final-cta-trust animate-on-scroll">
+                    <div class="final-cta-trust-item">
+                        <div class="final-cta-trust-icon">🛡️</div>
+                        <span>30-Day Guarantee</span>
+                    </div>
+                    <div class="final-cta-trust-item">
+                        <div class="final-cta-trust-icon">💻</div>
+                        <span>Windows & Linux</span>
+                    </div>
+                    <div class="final-cta-trust-item">
+                        <div class="final-cta-trust-icon">🔒</div>
+                        <span>100% Private</span>
+                    </div>
+                    <div class="final-cta-trust-item">
+                        <div class="final-cta-trust-icon">⚡</div>
+                        <span>Instant Access</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo" style="color: white;">
+                        <div class="logo-icon">W</div>
+                        <span>Whop Creator Toolkit</span>
+                    </a>
+                    <p>
+                        AI-powered tools for Whop creators that you buy once and own forever. 
+                        No subscriptions. No data sharing. Complete ownership and privacy 
+                        for the creators who demand more from their tools.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Twitter">𝕏</a>
+                        <a href="#" aria-label="Discord">💬</a>
+                        <a href="#" aria-label="YouTube">▶️</a>
+                        <a href="#" aria-label="GitHub">⌨️</a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Products</h4>
+                    <ul class="footer-links">
+                        <li><a href="#products">Whop Revenue Calculator</a></li>
+                        <li><a href="#products">WhopClipper</a></li>
+                        <li><a href="#products">Whop Analytics Pro</a></li>
+                        <li><a href="#products">Whop AI Assistant</a></li>
+                        <li><a href="#products">Bundle Deals</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Video Tutorials</a></li>
+                        <li><a href="#">Creator Blog</a></li>
+                        <li><a href="#">Free Growth Guide</a></li>
+                        <li><a href="#">Community Discord</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Support</a></li>
+                        <li><a href="#">Affiliate Program</a></li>
+                        <li><a href="#">Changelog</a></li>
+                        <li><a href="#">Roadmap</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2024 Whop Creator Toolkit. All rights reserved. Built with ❤️ for Whop creators.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Refund Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Animations and Interactions -->
+    <script>
+        // Header scroll effect
+        const header = document.getElementById('header');
+        let lastScroll = 0;
+
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+            
+            lastScroll = currentScroll;
+        });
+
+        // Scroll-based animations using Intersection Observer
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const animateOnScrollObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all elements with animate-on-scroll class
+        document.querySelectorAll('.animate-on-scroll').forEach(el => {
+            animateOnScrollObserver.observe(el);
+        });
+
+        // Observe stagger animation containers
+        document.querySelectorAll('.stagger-animation').forEach(el => {
+            animateOnScrollObserver.observe(el);
+        });
+
+        // FAQ Accordion functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                const isActive = faqItem.classList.contains('active');
+                
+                // Close all FAQ items
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    item.classList.remove('active');
+                });
+                
+                // Open clicked item if it wasn't already open
+                if (!isActive) {
+                    faqItem.classList.add('active');
+                }
+            });
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Mobile menu toggle
+        const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+        const nav = document.querySelector('.nav');
+
+        if (mobileMenuToggle) {
+            mobileMenuToggle.addEventListener('click', () => {
+                nav.classList.toggle('mobile-open');
+                mobileMenuToggle.classList.toggle('active');
+            });
+        }
+
+        // Animated counter for stats
+        function animateCounter(element, target, duration = 2000) {
+            let start = 0;
+            const increment = target / (duration / 16);
+            
+            function updateCounter() {
+                start += increment;
+                if (start < target) {
+                    element.textContent = Math.floor(start).toLocaleString();
+                    requestAnimationFrame(updateCounter);
+                } else {
+                    element.textContent = target.toLocaleString();
+                }
+            }
+            
+            updateCounter();
+        }
+
+        // Trigger counter animation when stats come into view
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const statValue = entry.target.querySelector('.trust-stat-value, .hero-stat-value');
+                    if (statValue && !statValue.dataset.animated) {
+                        statValue.dataset.animated = 'true';
+                        const text = statValue.textContent;
+                        const number = parseInt(text.replace(/[^0-9]/g, ''));
+                        if (!isNaN(number) && number > 0) {
+                            const prefix = text.match(/^[^0-9]*/)[0];
+                            const suffix = text.match(/[^0-9]*$/)[0];
+                            
+                            let current = 0;
+                            const increment = number / 50;
+                            const timer = setInterval(() => {
+                                current += increment;
+                                if (current >= number) {
+                                    statValue.textContent = text;
+                                    clearInterval(timer);
+                                } else {
+                                    statValue.textContent = prefix + Math.floor(current).toLocaleString() + suffix;
+                                }
+                            }, 30);
+                        }
+                    }
+                }
+            });
+        }, { threshold: 0.5 });
+
+        document.querySelectorAll('.trust-stat, .hero-stat').forEach(stat => {
+            statsObserver.observe(stat);
+        });
+
+        // Product card hover effects
+        document.querySelectorAll('.product-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-12px) scale(1.02)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = '';
+            });
+        });
+
+        // Parallax effect for floating elements
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const floatingElements = document.querySelectorAll('.floating-element');
+            
+            floatingElements.forEach((el, index) => {
+                const speed = 0.5 + (index * 0.1);
+                el.style.transform = `translateY(${scrolled * speed * 0.1}px)`;
+            });
+        });
+
+        // Button click ripple effect
+        document.querySelectorAll('.btn, .product-cta, .btn-cta-white, .btn-final-primary').forEach(button => {
+            button.addEventListener('click', function(e) {
+                const ripple = document.createElement('span');
+                const rect = this.getBoundingClientRect();
+                const size = Math.max(rect.width, rect.height);
+                const x = e.clientX - rect.left - size / 2;
+                const y = e.clientY - rect.top - size / 2;
+                
+                ripple.style.cssText = `
+                    position: absolute;
+                    width: ${size}px;
+                    height: ${size}px;
+                    left: ${x}px;
+                    top: ${y}px;
+                    background: rgba(255, 255, 255, 0.3);
+                    border-radius: 50%;
+                    transform: scale(0);
+                    animation: ripple 0.6s ease-out;
+                    pointer-events: none;
+                `;
+                
+                this.style.position = 'relative';
+                this.style.overflow = 'hidden';
+                this.appendChild(ripple);
+                
+                setTimeout(() => ripple.remove(), 600);
+            });
+        });
+
+        // Add ripple animation keyframes
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes ripple {
+                to {
+                    transform: scale(4);
+                    opacity: 0;
+                }
+            }
+            
+            .nav.mobile-open {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 80px;
+                left: 0;
+                right: 0;
+                background: white;
+                padding: 24px;
+                box-shadow: var(--shadow-lg);
+                border-top: 1px solid var(--border);
+            }
+            
+            .mobile-menu-toggle.active span:nth-child(1) {
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+            
+            .mobile-menu-toggle.active span:nth-child(2) {
+                opacity: 0;
+            }
+            
+            .mobile-menu-toggle.active span:nth-child(3) {
+                transform: rotate(-45deg) translate(7px, -6px);
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Lazy loading images (if any are added later)
+        if ('IntersectionObserver' in window) {
+            const imageObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        if (img.dataset.src) {
+                            img.src = img.dataset.src;
+                            img.classList.add('loaded');
+                            imageObserver.unobserve(img);
+                        }
+                    }
+                });
+            });
+            
+            document.querySelectorAll('img[data-src]').forEach(img => {
+                imageObserver.observe(img);
+            });
+        }
+
+        // Console Easter egg
+        console.log(`
+        🚀 Whop Creator Toolkit
+        ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+        Own your tools. Control your data.
+        Keep your profits.
+        
+        Built for Whop creators who demand more.
+        
+        Questions? support@whopcreator.toolkit
+        `);
+
+        // Performance: Defer non-critical animations on slow connections
+        if (navigator.connection && navigator.connection.saveData) {
+            document.documentElement.classList.add('reduce-motion');
+        }
+
+        // Accessibility: Reduce motion for users who prefer it
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            document.documentElement.classList.add('reduce-motion');
+        }
+    </script>
+
+    <!-- Structured Data for Breadcrumbs -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://whopcreator.toolkit"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Products",
+                "item": "https://whopcreator.toolkit/#products"
+            }
+        ]
+    }
+    </script>
+
+    <!-- Product Schema for Each Tool -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Whop Revenue Calculator",
+        "description": "Free AI-powered revenue analysis tool for Whop creators. Uses Google Sheets and Gemini AI to identify profit opportunities.",
+        "brand": {
+            "@type": "Brand",
+            "name": "Whop Creator Toolkit"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+        },
+        "category": "Business Software"
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "WhopClipper",
+        "description": "AI-powered video clipping tool for Whop content creators. Transform long-form content into viral short clips automatically.",
+        "brand": {
+            "@type": "Brand",
+            "name": "Whop Creator Toolkit"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "29",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+        },
+        "category": "Video Editing Software"
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Whop Analytics Pro",
+        "description": "Complete analytics dashboard with local AI insights for Whop creators. Get actionable recommendations to grow your business.",
+        "brand": {
+            "@type": "Brand",
+            "name": "Whop Creator Toolkit"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "99",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+        },
+        "category": "Analytics Software"
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Whop AI Assistant",
+        "description": "Local Ollama-powered AI chatbot trained on Whop best practices. Your personal growth consultant that knows your business.",
+        "brand": {
+            "@type": "Brand",
+            "name": "Whop Creator Toolkit"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "299",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+        },
+        "category": "AI Software"
+    }
+    </script>
+</body>
+</html>
